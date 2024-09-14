@@ -27,7 +27,27 @@
       </script>
 </head>
 <body>
-    
+    <header></header>
+    <main>
+      <section>
+        <div id="Ai-Section-Container" class="px-28 flex flex-wrap justify-between gap-y-10"></div>
+        <!-- You can open the modal using ID.showModal() method -->
+  
+        <dialog id="my_modal_3" class="modal">
+          <div class="modal-box w-10/12 max-w-5xl">
+            <form method="dialog">
+              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <div id="Model-Box-Details-Container" class="flex gap-5">
+              <div id="Model-Box1" class="border-2 p-5 flex-1"></div>
+              <div id="Model-Box2" class="flex-1"></div>
+            </div>
+          </div>
+        </dialog>
+        <div class="py-5 flex justify-center"><button id="see-more-btn" onclick="loadMoreAi()" class="btn btn-accent">See More</button></div>
+      </section>
+    </main>
+    <footer></footer>
     <script src="script.js"></script>
 </body>
 </html>
